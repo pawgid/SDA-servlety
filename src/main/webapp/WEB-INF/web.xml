@@ -9,6 +9,16 @@
         <servlet-class>pl.sda.PathServlet</servlet-class>
     </servlet>
 
+    <servlet>
+        <servlet-name>UserServlet</servlet-name>
+        <servlet-class>pl.sda.UserServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>UserServlet</servlet-name>
+        <url-pattern>/users/*</url-pattern>
+    </servlet-mapping>
+
     <servlet-mapping>
         <servlet-name>MyServlet</servlet-name>
         <url-pattern>/hello</url-pattern>
